@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Data.Models
 {
     public class Producto_Venta
     {
@@ -22,7 +22,7 @@ namespace Data
 
         [ForeignKey("id_Venta")]
         public Venta Venta { get; set; }
-        
+
         [ForeignKey("id_Producto")]
         public Producto Producto { get; set; }
     }

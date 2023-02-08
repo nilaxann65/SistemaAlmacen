@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Helpers;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Data
+namespace Data.Models
 {
     public class Producto
     {
@@ -17,7 +18,7 @@ namespace Data
 
         [ForeignKey("idCategoria")]
         public virtual Categoria Categoria { get; set; }
-        
+
         public virtual ICollection<Producto_Venta> Productos_Venta { get; set; }
     }
 }

@@ -6,18 +6,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Data
+namespace Data.Models
 {
-    public class Usuario
+    public class Configuracion
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int idUsuario { get; set; }
+        public int idConfiguracion { get; set; }
         public string nombre { get; set; }
-        public string contrasena { get; set; }
-        public int id_TipoUsuario { get; set; }
-        
-        [ForeignKey("id_TipoUsuario")]
-        public TipoUsuario TipoUsuario { get; set; }
+        public string valor { get; set; }
     }
 }

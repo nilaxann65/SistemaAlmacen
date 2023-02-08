@@ -23,6 +23,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data_Layer\Data.csproj" />
+    <ProjectReference Include="..\Helpers\Helpers.csproj" />
+    <ProjectReference Include="..\Models\Models.csproj" />
+    <ProjectReference Include="..\Service\Services.csproj" />
   </ItemGroup>
 
 </Project>
