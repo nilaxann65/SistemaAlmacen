@@ -9,8 +9,6 @@ namespace Data.Models
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
         public DbSet<Producto_Venta> Producto_Ventas { get; set; }
-        public DbSet<TipoUsuario> TipoUsuarios { get; set; }
-        public DbSet<Usuario> Usuarios { get; set; }
 
         public AlmacenContext(DbContextOptions<AlmacenContext> options)
             : base(options)

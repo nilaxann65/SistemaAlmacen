@@ -16,10 +16,6 @@ namespace Data.Models
         public DateTime fecha { get; set; }
         public decimal tazas { get; set; }
         public decimal total { get; set; }
-        [Required]
-        public int id_Vendedor { get; set; }
-        [ForeignKey("id_Vendedor")]
-        public Usuario Vendedor { get; set; }
 
         public virtual ICollection<Producto_Venta> Productos_Venta { get; set; }
     }

@@ -9,7 +9,6 @@ namespace Models
         public DateTime fecha { get; set; }
         public decimal tazas { get; set; }
         public decimal total { get; set; }
-        public int id_Vendedor { get; set; }
 
         public static VentaModel operator +(VentaModel ventaModel, Venta venta)
         {
@@ -17,7 +16,6 @@ namespace Models
             ventaModel.fecha = venta.fecha;
             ventaModel.tazas = venta.tazas;
             ventaModel.total = venta.total;
-            ventaModel.id_Vendedor = venta.id_Vendedor;
             return ventaModel;
         }
 
@@ -27,7 +25,6 @@ namespace Models
             venta.fecha = ventaModel.fecha;
             venta.tazas = ventaModel.tazas;
             venta.total = ventaModel.total;
-            venta.id_Vendedor = ventaModel.id_Vendedor;
             return venta;
         }
     }

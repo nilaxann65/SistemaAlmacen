@@ -39,7 +39,6 @@ namespace Services
         {
             Venta venta = new Venta
             {
-                id_Vendedor = 1,
                 total = 0,
                 tazas = 0,
                 fecha = DateTime.Now,
